@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>Currciculum Vitae</center>
+    <article>
+        <form action="index.html" method="GET">
+            <section>
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <div>
+                        <label for="dui">DUI</label>
+                        <input type="text" name:"dui" id="dui" placeholder="048134128 NO slash" minlength="8" maxlength="8" pattern="[0-9]{8}" required>
+
+                        <label for="nombre">First Name</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="First Name" required>
+
+                        <label for="apellido">Last Name</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="LastName" required>
+
+                        <label for="gender"Gender></label>
+                        <input type="radio" name="gender" value="m">M
+                        <input type="radio" name="gender" value="f">F
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefono" required>Contact Number</label>
+                        <input type="tel" name="telefono" required>
+                        
+                        <label for="cumpleannios" >Birth DAte</label>
+                        <input type="date" name="cumpleannios" required>
+
+                        <label for="status">Civil status</label>
+                        <select name="status" id="status" required>
+                            <option value="null">Select</option>
+                            <option value="casado">Married</option>
+                            <option value="soltero">Single</option>
+                            <option value="divorciado">Divorced</option>
+                            <option value="viudo">Widow</option>
+                        </select>
+                        <label for="foto">Image</label>
+
+                        <input type="file" name="foto">
+                    </div>
+                </fieldset>
+            </section>
+            <br>
+            <section>
+                <fieldset>
+                    <legend>Work Experience</legend>
+                    <textarea name="aboutu" id="aboutu" style="width: 100%" placeholder="Experience" required></textarea>
+                </fieldset>
+            </section>
+            <br>
+            <section>
+                <fieldset>
+                    <legend>Academic Training</legend>
+                    <textarea name="academic" id="academic" style="width: 100%" placeholder="Academic Training " required></textarea>
+                </fieldset>
+            </section>
+            <br>
+            <section>
+                <fieldset>
+                    <legend>Further Training</legend>
+                    <fieldset>
+                        <legend>Programing Languages</legend>
+                        <input type="checkbox" name="lenguajes">Java
+                        <input type="checkbox" name="lenguajes">C#
+                        <input type="checkbox" name="lenguajes">Python
+                        <input type="checkbox" name="lenguajes">C++
+                        <input type="checkbox" name="lenguajes">Ruby
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Web Technologies</legend>
+                        <input type="checkbox" name="web">HTML6 
+                        <input type="checkbox" name="web">CSS/CSS3
+                        <input type="checkbox" name="web">materialize Css
+                        <input type="checkbox" name="web">Javascript
+                        <input type="checkbox" name="web">Node.js
+                        <input type="checkbox" name="web">Spring MVC
+                    </fieldset>
+                </fieldset>
+            </section>
+            <br>
+        <input type="submit" value="Send">
+        <input type="submit" value="Cancel">
+    </form>
+    </article>
+</body>
+</html>
