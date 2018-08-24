@@ -15,7 +15,7 @@
                     <legend>Personal Data</legend>
                     <div>
                         <label for="dui">DUI</label>
-                        <input type="text" name:"dui" id="dui" placeholder="048134128 NO slash" minlength="8" maxlength="8" pattern="[0-9]{8}" required>
+                        <input type="text" name:"dui" id="dui" placeholder="04813412-8" pattern="\d{8}[\-]\d{1}" required>
 
                         <label for="nombre">First Name</label>
                         <input type="text" name="nombre" id="nombre" placeholder="First Name" required>
@@ -30,10 +30,10 @@
                     <br>
                     <div>
                         <label for="telefono" required>Contact Number</label>
-                        <input type="tel" name="telefono" required>
+                        <input type="tel" name="telefono" placeholder="7638-3016" pattern="\d{4}[\-]\d{4}" required>
                         
-                        <label for="cumpleannios" >Birth DAte</label>
-                        <input type="date" name="cumpleannios" required>
+                        <label for="cumpleannios" >Birth Date</label>
+                        <input type="date" name="cumpleannios" min="2000-01-01" max="2018-12-31" required>
 
                         <label for="status">Civil status</label>
                         <select name="status" id="status" required>
@@ -89,7 +89,7 @@
             </section>
             <br>
         <input type="submit" value="Send">
-        <input type="submit" value="Cancel">
+        <input type="reset" value="Cancel">
     </form>
     </article>
 </body>
